@@ -8,13 +8,6 @@
 
 using namespace std;
 
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
-
-using namespace std;
-
 class Node {
 public:
     string carNumber;

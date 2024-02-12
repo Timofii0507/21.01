@@ -2,13 +2,12 @@
 #include <Windows.h>
 #include "dai.h"
 
-int main()
-{
+int main() {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     BinarySearchTree bst;
 
-    std::ifstream inputFile("DAI.txt");
+    ifstream inputFile("DAI.txt");
     if (inputFile.is_open()) {
         bst.loadFromFile(inputFile);
         inputFile.close();

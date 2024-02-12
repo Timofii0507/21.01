@@ -1,5 +1,15 @@
 #include "dai.h"
 
+Node::Node(string carNumber) {
+    this->carNumber = carNumber;
+    left = nullptr;
+    right = nullptr;
+}
+
+BinarySearchTree::BinarySearchTree() {
+    root = nullptr;
+}
+
 void BinarySearchTree::insert(string carNumber, string violation) {
     Node* newNode = findNode(carNumber);
     if (newNode != nullptr) {
